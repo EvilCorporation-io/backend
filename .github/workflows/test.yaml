@@ -22,4 +22,4 @@ jobs:
             TOKEN=${{ secrets.GH_TOKEN }}
             USERNAME=${{ github.actor }}
           push: false
-          tags: ghcr.io/evilcorporation-io/backend:${{ github.sha }}
+          tags: ghcr.io/evilcorporation-io/backend:${{ github.run_id }}
